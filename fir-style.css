@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bg{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background-yi-sk-U7yEk0lRZMg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.lefttop{
+    height: 10%; /*【劃設範圍】設定左上logo範圍-畫面上方25%*/
+    margin: 50px 50px; /*【上下/左右 側留白】讓logo騰出留白位置*/
+    position: relative;
+    z-index: 2;
+}
+
+.lefttop .logo{
+    height: 100%;  /*【100%填滿範圍】讓logo填滿 上方設定的畫面範圍*/
+}
+.lefttop hr{
+    border: none;
+    height: 6px;
+    max-width: 250px;
+    margin-top: 5px;
+    background: #F26E21;
+}
+
+.leftmid{
+    position: relative;
+    z-index: 2;
+}
+
+.leftmid h1{
+    font-size: 150px;
+    font-weight: 100;  /*字體粗細 400為普通尺寸，700為粗體*/
+    color: #F26E21;
+    margin: 50px 50px;
+    letter-spacing: 5px; 
+    line-height: 90%; /*上下行間距*/
+}
+
+.leftmid p{
+    font-size: 15px;
+    max-width: 50%;
+    color: lightcoral;
+    letter-spacing: 1px;
+    margin: 50px 55px;
+}
+
+.leftmid .btn{
+    text-decoration: none;
+    border: 1px solid lightcoral; /*按鈕框線*/
+    color: lightcoral;
+    letter-spacing: 1px;
+    padding: 18px 36px; /*按鈕內空間*/
+    border-radius: 30px; /*按鈕邊角圓弧*/
+    display: inline-block;
+    margin: 50px 55px;
+}
+
+.leftmid .btn:hover{
+    background: lightcoral;
+    border-color: lightcoral;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn2{
+    float: right;/*漂浮至右側*/
+}
+
+.sidebar{
+    background:rgba(red, green, blue, 0.8);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(6px);
+}
+
+.menu{
+    float: right;/*漂浮至右側*/
+    cursor: pointer;/*滑鼠移至其上 出現可點擊的手*/
+}
